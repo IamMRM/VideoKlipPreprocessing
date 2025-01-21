@@ -1,1 +1,4 @@
 dataset_unprocessed/*
+dataset_cleaned/*
+.venv
+__pycache__
