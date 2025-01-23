@@ -18,8 +18,6 @@ def main():
 
         if i == 1:
             break
-        # Optional: remove the standardized intermediate file
-        # os.remove(standardized_path)
 
     print("All videos processed successfully!")
 
