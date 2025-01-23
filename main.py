@@ -11,13 +11,15 @@ def main():
 
     clip_index = 0
     for i, video_path in enumerate(video_paths):
-        print(f"[{i+1}/{len(video_paths)}] {video_path}")
-        num_segments = process_video(video_path, clip_index)
-        clip_index += 1
-        print(f" -> Produced {num_segments} clips")
-
-        if i == 1:
-            break
+        try:
+            print(f"[{i+1}/{len(video_paths)}] {video_path}")
+            num_segments = process_video(video_path, clip_index)
+            clip_index += 1
+            print(f" -> Produced {num_segments} clips")
+            print(f"Done with the clip name {video_path} and number {i}")
+        except:
+            print(f"problem with the clip name {video_path} and number {i}")
+            continue
 
     print("All videos processed successfully!")
 
