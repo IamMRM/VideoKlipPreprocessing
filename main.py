@@ -1,6 +1,7 @@
 import os
 from video_processing import *
 from config import INPUT_DIR, OUTPUT_DIR
+import time
 
 def main():
     video_paths = get_all_video_files(INPUT_DIR)
@@ -17,6 +18,8 @@ def main():
             clip_index += 1
             print(f" -> Produced {num_segments} clips")
             print(f"Done with the clip name {video_path} and number {i}")
+            sleep_duration = 0.5 * i  # because of slow internet (not exponential)
+            time.sleep(sleep_duration)
         except:
             print(f"problem with the clip name {video_path} and number {i}")
             continue

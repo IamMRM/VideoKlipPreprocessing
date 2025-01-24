@@ -135,7 +135,7 @@ def process_video(video_path, clip_index):
         # Delete the temporary MP4 file
         if os.path.exists(tmp_out_path):
             os.remove(tmp_out_path)
-            print(f"Deleted temp file: {tmp_out_path}")
+            #print(f"Deleted temp file: {tmp_out_path}")
 
         segment_count += 1
         start += SEGMENT_LENGTH
