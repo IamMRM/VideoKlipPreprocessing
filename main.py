@@ -19,7 +19,9 @@ def main():
             print(f" -> Produced {num_segments} clips")
             print(f"Done with the clip name {video_path} and number {i}")
             sleep_duration = 0.5 * i  # because of slow internet (not exponential)
-            time.sleep(sleep_duration)
+            #time.sleep(sleep_duration)
+            if i == 20:
+                break
         except:
             print(f"problem with the clip name {video_path} and number {i}")
             continue

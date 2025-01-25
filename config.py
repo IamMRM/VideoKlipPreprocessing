@@ -1,5 +1,5 @@
 # config.py
-INPUT_DIR = "/media/roscha/T7 Shield/Datasets/blackedraw"
+INPUT_DIR = "dataset_unprocessed"#"/media/roscha/T7 Shield/Datasets/blabla"
 OUTPUT_TEMP_DIR = "dataset_cleaned_1"
 OUTPUT_DIR = "dataset_cleaned"
 SEGMENT_LENGTH = 20  # Duration of each clip in seconds
